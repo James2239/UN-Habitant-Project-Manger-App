@@ -1,0 +1,29 @@
+# .gitignore for UN-Habitat Project Manager
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite database
+projects.db
+
+# Node/npm
+node_modules/
+
+# React build
+frontend/build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Excel/other data
+*.xlsx
+
+# Misc
+.env
