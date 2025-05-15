@@ -70,4 +70,4 @@ This creates a `build/` folder with static files. You can serve these with any s
 
 ---
 
-For any issues, please check the README or contact me trough email:jamesngkaranja@gmail.com.
+For any issues, please check the README or contact  through email:jamesngkaranja@gmail.com.
