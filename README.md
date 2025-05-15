@@ -21,8 +21,6 @@ See [DEPLOYMENT.md](./DEPLOYMENT.md) for full setup and deployment instructions.
 - `init_db.py` — Initialize database
 - `DEPLOYMENT.md` — Step-by-step deployment guide
 
-## Screenshots
-_Add screenshots of the dashboard and CRUD interface here._
 
 ## License
 MIT or UN-Habitat internal use (update as appropriate)
