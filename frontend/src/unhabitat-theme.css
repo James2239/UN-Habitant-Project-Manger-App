@@ -1,0 +1,57 @@
+/* UN-Habitat Theme Colors */
+:root {
+  --unh-blue: #009EDB;
+  --unh-dark: #222;
+  --unh-light: #fff;
+  --unh-accent: #005B82;
+}
+
+body {
+  background: var(--unh-light);
+  color: var(--unh-dark);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h2, .navbar-brand {
+  color: var(--unh-blue) !important;
+  font-weight: 700;
+}
+
+.btn-primary, .btn-success {
+  background-color: var(--unh-blue) !important;
+  border-color: var(--unh-blue) !important;
+}
+
+.btn-primary:hover, .btn-success:hover {
+  background-color: var(--unh-accent) !important;
+  border-color: var(--unh-accent) !important;
+}
+
+.table {
+  border-color: var(--unh-blue);
+}
+
+.table thead th {
+  background: var(--unh-blue);
+  color: var(--unh-light);
+  border-color: var(--unh-blue);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e6f6fc;
+}
+
+.pagination .page-link, .pagination .page-item.active .page-link {
+  color: var(--unh-blue);
+  border-color: var(--unh-blue);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--unh-blue);
+  color: var(--unh-light);
+}
+
+.modal-header {
+  background: var(--unh-blue);
+  color: var(--unh-light);
+}
