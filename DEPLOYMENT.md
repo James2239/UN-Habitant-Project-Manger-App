@@ -97,4 +97,4 @@ This approach simplifies deployment and hosting, as you only need to run and exp
 
 ---
 
-For any issues, please check the README or contact the project maintainer.
+For any issues, please check the README or contact  through email:jamesngkaranja@gmail.com.
