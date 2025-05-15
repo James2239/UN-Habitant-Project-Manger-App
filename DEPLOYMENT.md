@@ -59,6 +59,33 @@ npm run build
 ```
 This creates a `build/` folder with static files. You can serve these with any static file server or configure Flask to serve them.
 
+## Alternative: Serve React Build with Flask
+
+You can deploy the entire app as a single Flask service that serves both the backend API and the React frontend.
+
+1. **Build the React frontend:**
+   ```powershell
+   cd frontend
+   npm run build
+   cd ..
+   ```
+   This creates a `frontend/build/` directory with static files.
+
+2. **Ensure Flask is configured to serve the React build** (already set up in `app.py`):
+   - Flask will serve files from `frontend/build` and route all unknown paths to `index.html`.
+
+3. **Start the Flask server:**
+   ```powershell
+   python app.py
+   ```
+   - Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) to use the app.
+
+4. **Deploy to production:**
+   - Use a WSGI server (e.g., Gunicorn) and a reverse proxy (e.g., Nginx) for production.
+   - All static frontend files and API endpoints are served from the same Flask app.
+
+This approach simplifies deployment and hosting, as you only need to run and expose the Flask service.
+
 ## 6. Notes
 - Ensure both backend and frontend are running for full functionality.
 - For deployment to a server (e.g., Azure, Heroku, DigitalOcean), use a production WSGI server (e.g., Gunicorn) for Flask and a static file server (e.g., Nginx) for the React build.
